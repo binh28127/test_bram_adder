@@ -89,7 +89,7 @@ set_property ip_output_repo e:/zynq_beginner/test_bram_adder/test_bram_adder.cac
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib E:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+read_verilog -library xil_defaultlib e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc]

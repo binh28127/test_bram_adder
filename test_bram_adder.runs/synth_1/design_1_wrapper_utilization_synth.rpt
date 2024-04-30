@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Mon Apr 29 18:50:40 2024
+| Date         : Tue Apr 30 08:05:38 2024
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -183,7 +183,7 @@ Table of Contents
 | design_1_axi_smc_3              |    1 |
 | design_1_axi_gpio_0_0           |    1 |
 | design_1_axi_bram_ctrl_0_0      |    1 |
-| design_1_adder_0_0              |    1 |
+| design_1_adder_v2_0_0           |    1 |
 +---------------------------------+------+
 
 

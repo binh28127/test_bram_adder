@@ -18,7 +18,7 @@
       "axi_bram_ctrl_0": "",
       "axi_gpio_0": "",
       "axi_smc": "",
-      "adder_0": ""
+      "adder_v2_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1292,14 +1292,14 @@
           }
         }
       },
-      "adder_0": {
-        "vlnv": "xilinx.com:module_ref:adder:1.0",
-        "xci_name": "design_1_adder_0_0",
-        "xci_path": "ip\\design_1_adder_0_0\\design_1_adder_0_0.xci",
-        "inst_hier_path": "adder_0",
+      "adder_v2_0": {
+        "vlnv": "xilinx.com:module_ref:adder_v2:1.0",
+        "xci_name": "design_1_adder_v2_0_0",
+        "xci_path": "ip\\design_1_adder_v2_0_0\\design_1_adder_v2_0_0.xci",
+        "inst_hier_path": "adder_v2_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "adder",
+          "ref_name": "adder_v2",
           "boundary_crc": "0x0"
         },
         "interface_ports": {
@@ -1390,10 +1390,10 @@
       }
     },
     "interface_nets": {
-      "adder_0_BRAM_PORTB": {
+      "adder_v2_0_BRAM_PORTB": {
         "interface_ports": [
-          "blk_mem_gen_0/BRAM_PORTB",
-          "adder_0/BRAM_PORTB"
+          "adder_v2_0/BRAM_PORTB",
+          "blk_mem_gen_0/BRAM_PORTB"
         ]
       },
       "axi_bram_ctrl_0_BRAM_PORTA": {
@@ -1434,16 +1434,16 @@
       }
     },
     "nets": {
-      "adder_0_rspd_signal": {
+      "adder_v2_0_rspd_signal": {
         "ports": [
-          "adder_0/rspd_signal",
+          "adder_v2_0/rspd_signal",
           "axi_gpio_0/gpio2_io_i"
         ]
       },
       "axi_gpio_0_gpio_io_o": {
         "ports": [
           "axi_gpio_0/gpio_io_o",
-          "adder_0/ctrl_signal"
+          "adder_v2_0/ctrl_signal"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -1454,7 +1454,7 @@
           "axi_bram_ctrl_0/s_axi_aclk",
           "axi_gpio_0/s_axi_aclk",
           "axi_smc/aclk",
-          "adder_0/clk"
+          "adder_v2_0/clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1469,7 +1469,7 @@
           "axi_bram_ctrl_0/s_axi_aresetn",
           "axi_gpio_0/s_axi_aresetn",
           "axi_smc/aresetn",
-          "adder_0/rstn"
+          "adder_v2_0/rstn"
         ]
       }
     },

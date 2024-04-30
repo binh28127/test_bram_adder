@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Apr 29 20:01:03 2024
+# Process ID: 5577
+# Current directory: /media/binh/ShareData/zynq_beginner/test_bram_adder
+# Command line: vivado
+# Log file: /media/binh/ShareData/zynq_beginner/test_bram_adder/vivado.log
+# Journal file: /media/binh/ShareData/zynq_beginner/test_bram_adder/vivado.jou
+# Running On: binh-GF63, OS: Linux, CPU Frequency: 799.989 MHz, CPU Physical cores: 6, Host memory: 16571 MB
+#-----------------------------------------------------------
+start_gui
+open_project /media/binh/ShareData/zynq_beginner/test_bram_adder/test_bram_adder.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /media/binh/ShareData/zynq_beginner/test_bram_adder/tb_adder_behav.wcfg
+source tb_adder.tcl
+open_bd_design {/media/binh/ShareData/zynq_beginner/test_bram_adder/test_bram_adder.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_adder_0_0
+close_sim

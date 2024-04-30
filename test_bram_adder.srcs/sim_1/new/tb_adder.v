@@ -15,7 +15,7 @@ module tb_adder;
     wire BRAM_rst;
     wire [3:0]BRAM_we;
     
-    adder adder_0 (
+    adder_v2 adder_v2_0 (
         .clk(clk),
         .rstn(rstn),
         .ctrl_signal(ctrl_signal),

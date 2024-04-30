@@ -14,11 +14,11 @@ ECHO is off.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 449.012 ; gain = 164.512
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 449.961 ; gain = 165.586
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 484.902 ; gain = 35.891
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 486.270 ; gain = 36.309
 Command: read_checkpoint -auto_incremental -incremental E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -31,32 +31,32 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2308
+INFO: [Synth 8-7075] Helper process launched with PID 23596
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1334.562 ; gain = 411.902
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1333.656 ; gain = 410.973
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [E:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_adder_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_adder_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_adder_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_adder_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_3' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_axi_smc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_3' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_axi_smc_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_adder_v2_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_adder_v2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_adder_v2_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_adder_v2_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_3' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_axi_smc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_3' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_axi_smc_3_stub.v:6]
 WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'design_1_axi_smc_3' is unconnected for instance 'axi_smc' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:262]
 WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'design_1_axi_smc_3' is unconnected for instance 'axi_smc' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:262]
 WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_axi_smc_3' is unconnected for instance 'axi_smc' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:262]
 WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_axi_smc_3' is unconnected for instance 'axi_smc' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:262]
 WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_3' has 92 connections declared, but only 88 given [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:262]
-INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_blk_mem_gen_0_0' is unconnected for instance 'blk_mem_gen_0' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:351]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_blk_mem_gen_0_0' is unconnected for instance 'blk_mem_gen_0' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:351]
 WARNING: [Synth 8-7023] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_0' has 16 connections declared, but only 14 given [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:351]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'ENET0_MDIO_MDC' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:368]
 WARNING: [Synth 8-7071] port 'ENET0_MDIO_O' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:368]
 WARNING: [Synth 8-7071] port 'ENET0_MDIO_T' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:368]
@@ -66,28 +66,28 @@ WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'design_1_processing_sys
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:368]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:368]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 73 connections declared, but only 65 given [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:368]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-25292-MSI/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/.Xil/Vivado-24372-MSI/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:434]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:434]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:434]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:434]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:434]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [E:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1431.035 ; gain = 508.375
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1431.035 ; gain = 508.375
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1431.035 ; gain = 508.375
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1431.035 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1431.281 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -104,8 +104,8 @@ Parsing XDC File [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1
 Finished Parsing XDC File [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
 Parsing XDC File [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/design_1_axi_smc_3/design_1_axi_smc_3_in_context.xdc] for cell 'design_1_i/axi_smc'
 Finished Parsing XDC File [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/design_1_axi_smc_3/design_1_axi_smc_3_in_context.xdc] for cell 'design_1_i/axi_smc'
-Parsing XDC File [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/ip/design_1_adder_0_0/design_1_adder_0_0/design_1_adder_0_0_in_context.xdc] for cell 'design_1_i/adder_0'
-Finished Parsing XDC File [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/ip/design_1_adder_0_0/design_1_adder_0_0/design_1_adder_0_0_in_context.xdc] for cell 'design_1_i/adder_0'
+Parsing XDC File [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/ip/design_1_adder_v2_0_0/design_1_adder_v2_0_0/design_1_adder_v2_0_0_in_context.xdc] for cell 'design_1_i/adder_v2_0'
+Finished Parsing XDC File [e:/zynq_beginner/test_bram_adder/test_bram_adder.gen/sources_1/bd/design_1/ip/design_1_adder_v2_0_0/design_1_adder_v2_0_0/design_1_adder_v2_0_0_in_context.xdc] for cell 'design_1_i/adder_v2_0'
 Parsing XDC File [E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/constrs_1/imports/zynq_beginner/Zedboard-Master.xdc]
 WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/constrs_1/imports/zynq_beginner/Zedboard-Master.xdc:362]
 WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/constrs_1/imports/zynq_beginner/Zedboard-Master.xdc:367]
@@ -118,23 +118,23 @@ Parsing XDC File [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/
 Finished Parsing XDC File [E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1440.184 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1431.281 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1440.184 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1431.281 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1440.918 ; gain = 518.258
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1440.918 ; gain = 518.258
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -406,12 +406,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (const
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/adder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/adder_v2_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1440.918 ; gain = 518.258
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1440.918 ; gain = 518.258
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -434,25 +434,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1440.918 ; gain = 518.258
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1440.918 ; gain = 518.258
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1440.918 ; gain = 518.258
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1431.281 ; gain = 508.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1440.918 ; gain = 518.258
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1435.094 ; gain = 512.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -470,37 +470,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1452.934 ; gain = 530.273
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.863 ; gain = 528.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1452.934 ; gain = 530.273
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.863 ; gain = 528.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1452.934 ; gain = 530.273
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.863 ; gain = 528.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1452.934 ; gain = 530.273
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.863 ; gain = 528.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1452.934 ; gain = 530.273
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.863 ; gain = 528.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1452.934 ; gain = 530.273
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.863 ; gain = 528.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -510,7 +510,7 @@ Report BlackBoxes:
 +------+--------------------------------+----------+
 |      |BlackBox name                   |Instances |
 +------+--------------------------------+----------+
-|1     |design_1_adder_0_0              |         1|
+|1     |design_1_adder_v2_0_0           |         1|
 |2     |design_1_axi_bram_ctrl_0_0      |         1|
 |3     |design_1_axi_gpio_0_0           |         1|
 |4     |design_1_axi_smc_3              |         1|
@@ -523,7 +523,7 @@ Report Cell Usage:
 +------+------------------------------+------+
 |      |Cell                          |Count |
 +------+------------------------------+------+
-|1     |design_1_adder_0              |     1|
+|1     |design_1_adder_v2_0           |     1|
 |2     |design_1_axi_bram_ctrl_0      |     1|
 |3     |design_1_axi_gpio_0           |     1|
 |4     |design_1_axi_smc              |     1|
@@ -532,24 +532,24 @@ Report Cell Usage:
 |7     |design_1_rst_ps7_0_100M       |     1|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1452.934 ; gain = 530.273
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.863 ; gain = 528.180
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1452.934 ; gain = 520.391
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1452.934 ; gain = 530.273
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1450.863 ; gain = 528.180
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.863 ; gain = 528.180
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1452.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1450.863 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1475.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1477.031 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 4aa20616
+Synth Design complete | Checksum: 774607d3
 INFO: [Common 17-83] Releasing license: Synthesis
 40 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1479.859 ; gain = 970.949
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1482.035 ; gain = 972.801
 INFO: [Common 17-1381] The checkpoint 'E:/zynq_beginner/test_bram_adder/test_bram_adder.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 18:50:40 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 08:05:38 2024...

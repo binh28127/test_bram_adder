@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 29 18:48:24 2024" VIVADOVERSION="2023.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 30 08:03:44 2024" VIVADOVERSION="2023.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zedboard:part0:1.1" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -159,10 +159,10 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="1" FULLNAME="/adder_0" HWVERSION="1.0" INSTANCE="adder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="adder" VLNV="xilinx.com:module_ref:adder:1.0">
+    <MODULE COREREVISION="1" FULLNAME="/adder_v2_0" HWVERSION="1.0" INSTANCE="adder_v2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="adder_v2" VLNV="xilinx.com:module_ref:adder_v2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_adder_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_adder_v2_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -181,49 +181,49 @@
             <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="rspd_signal" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_rspd_signal">
+        <PORT DIR="O" LEFT="1" NAME="rspd_signal" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_rspd_signal">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio2_io_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="BRAM_addr" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_BRAM_addr">
+        <PORT DIR="O" LEFT="31" NAME="BRAM_addr" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_addr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="BRAM_clk" SIGIS="clk" SIGNAME="adder_0_BRAM_clk">
+        <PORT DIR="O" NAME="BRAM_clk" SIGIS="clk" SIGNAME="adder_v2_0_BRAM_clk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clkb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="BRAM_din" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_BRAM_din">
+        <PORT DIR="O" LEFT="31" NAME="BRAM_din" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_din">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dinb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="BRAM_dout" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_BRAM_dout">
+        <PORT DIR="I" LEFT="31" NAME="BRAM_dout" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="doutb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="BRAM_en" SIGIS="undef" SIGNAME="adder_0_BRAM_en">
+        <PORT DIR="O" NAME="BRAM_en" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_en">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="enb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="BRAM_rst" SIGIS="rst" SIGNAME="adder_0_BRAM_rst">
+        <PORT DIR="O" NAME="BRAM_rst" SIGIS="rst" SIGNAME="adder_v2_0_BRAM_rst">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="rstb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="BRAM_we" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_BRAM_we">
+        <PORT DIR="O" LEFT="3" NAME="BRAM_we" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_we">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="web"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="adder_0_BRAM_PORTB" NAME="BRAM_PORTB" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
+        <BUSINTERFACE BUSNAME="adder_v2_0_BRAM_PORTB" NAME="BRAM_PORTB" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
           <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
           <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
@@ -1170,12 +1170,12 @@
         </PORT>
         <PORT DIR="O" LEFT="1" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adder_0" PORT="ctrl_signal"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="ctrl_signal"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="gpio2_io_i" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_rspd_signal">
+        <PORT DIR="I" LEFT="1" NAME="gpio2_io_i" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_rspd_signal">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adder_0" PORT="rspd_signal"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="rspd_signal"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2093,39 +2093,39 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="bram_rddata_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="adder_0_BRAM_clk">
+        <PORT DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="adder_v2_0_BRAM_clk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adder_0" PORT="BRAM_clk"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="BRAM_clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rstb" SIGIS="rst" SIGNAME="adder_0_BRAM_rst">
+        <PORT DIR="I" NAME="rstb" SIGIS="rst" SIGNAME="adder_v2_0_BRAM_rst">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adder_0" PORT="BRAM_rst"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="BRAM_rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="enb" SIGIS="undef" SIGNAME="adder_0_BRAM_en">
+        <PORT DIR="I" NAME="enb" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_en">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adder_0" PORT="BRAM_en"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="BRAM_en"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_BRAM_we">
+        <PORT DIR="I" LEFT="3" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_we">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adder_0" PORT="BRAM_we"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="BRAM_we"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_BRAM_addr">
+        <PORT DIR="I" LEFT="31" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_addr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adder_0" PORT="BRAM_addr"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="BRAM_addr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_BRAM_din">
+        <PORT DIR="I" LEFT="31" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_din">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adder_0" PORT="BRAM_din"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="BRAM_din"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_BRAM_dout">
+        <PORT DIR="O" LEFT="31" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="adder_v2_0_BRAM_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adder_0" PORT="BRAM_dout"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="BRAM_dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="rsta_busy" SIGIS="undef"/>
@@ -2149,7 +2149,7 @@
             <PORTMAP LOGICAL="WE" PHYSICAL="wea"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="adder_0_BRAM_PORTB" NAME="BRAM_PORTB" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+        <BUSINTERFACE BUSNAME="adder_v2_0_BRAM_PORTB" NAME="BRAM_PORTB" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
           <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
           <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
@@ -3323,7 +3323,7 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_smc" PORT="aclk"/>
-            <CONNECTION INSTANCE="adder_0" PORT="clk"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -3628,7 +3628,7 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_smc" PORT="aresetn"/>
-            <CONNECTION INSTANCE="adder_0" PORT="rstn"/>
+            <CONNECTION INSTANCE="adder_v2_0" PORT="rstn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

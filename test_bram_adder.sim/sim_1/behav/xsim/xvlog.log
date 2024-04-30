@@ -1,8 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/sources_1/new/adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module adder
-WARNING: [VRFC 10-3248] data object 'read_valid' is already declared [E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/sources_1/new/adder.v:39]
-WARNING: [VRFC 10-9364] second declaration of 'read_valid' is ignored [E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/sources_1/new/adder.v:39]
-WARNING: [VRFC 10-3248] data object 'write_valid' is already declared [E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/sources_1/new/adder.v:40]
-WARNING: [VRFC 10-9364] second declaration of 'write_valid' is ignored [E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/sources_1/new/adder.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/sources_1/new/adder_v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_v2
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/zynq_beginner/test_bram_adder/test_bram_adder.srcs/sim_1/new/tb_adder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_adder

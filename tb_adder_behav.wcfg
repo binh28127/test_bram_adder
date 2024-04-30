@@ -11,60 +11,63 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="162.297 ns"></ZoomStartTime>
-      <ZoomEndTime time="352.898 ns"></ZoomEndTime>
+      <ZoomStartTime time="3.049 ns"></ZoomStartTime>
+      <ZoomEndTime time="130.450 ns"></ZoomEndTime>
       <Cursor1Time time="386.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="223"></NameColumnWidth>
-      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
-   <wvobject fp_name="/tb_adder/adder_0/clk" type="logic">
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/tb_adder/adder_v2_0/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/rstn" type="logic">
+   <wvobject fp_name="/tb_adder/adder_v2_0/rstn" type="logic">
       <obj_property name="ElementShortName">rstn</obj_property>
       <obj_property name="ObjectShortName">rstn</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/rst" type="logic">
+   <wvobject fp_name="/tb_adder/adder_v2_0/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/ctrl_signal" type="array">
+   <wvobject fp_name="/tb_adder/adder_v2_0/ctrl_signal" type="array">
       <obj_property name="ElementShortName">ctrl_signal[1:0]</obj_property>
       <obj_property name="ObjectShortName">ctrl_signal[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/rspd_signal" type="array">
+   <wvobject fp_name="/tb_adder/adder_v2_0/rspd_signal" type="array">
       <obj_property name="ElementShortName">rspd_signal[1:0]</obj_property>
       <obj_property name="ObjectShortName">rspd_signal[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/BRAM_addr" type="array">
+   <wvobject fp_name="/tb_adder/adder_v2_0/BRAM_addr" type="array">
       <obj_property name="ElementShortName">BRAM_addr[31:0]</obj_property>
       <obj_property name="ObjectShortName">BRAM_addr[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/write_valid" type="logic">
-      <obj_property name="ElementShortName">write_valid</obj_property>
-      <obj_property name="ObjectShortName">write_valid</obj_property>
+   <wvobject fp_name="/tb_adder/adder_v2_0/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/read_valid" type="logic">
+   <wvobject fp_name="/tb_adder/adder_v2_0/read_valid" type="logic">
       <obj_property name="ElementShortName">read_valid</obj_property>
       <obj_property name="ObjectShortName">read_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/valid" type="logic">
-      <obj_property name="ElementShortName">valid</obj_property>
-      <obj_property name="ObjectShortName">valid</obj_property>
+   <wvobject fp_name="/tb_adder/adder_v2_0/write_valid" type="logic">
+      <obj_property name="ElementShortName">write_valid</obj_property>
+      <obj_property name="ObjectShortName">write_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/addr" type="array">
+   <wvobject fp_name="/tb_adder/adder_v2_0/addr" type="array">
       <obj_property name="ElementShortName">addr[31:0]</obj_property>
       <obj_property name="ObjectShortName">addr[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_adder/adder_0/counter" type="array">
+   <wvobject fp_name="/tb_adder/adder_v2_0/counter" type="array">
       <obj_property name="ElementShortName">counter[3:0]</obj_property>
       <obj_property name="ObjectShortName">counter[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adder/BRAM_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_en</obj_property>
    </wvobject>
 </wave_config>

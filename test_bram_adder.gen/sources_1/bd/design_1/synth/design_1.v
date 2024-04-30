@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Mon Apr 29 18:48:17 2024
+//Date        : Tue Apr 30 08:03:38 2024
 //Host        : MSI running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -55,14 +55,14 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
 
-  wire [31:0]adder_0_BRAM_PORTB_ADDR;
-  wire adder_0_BRAM_PORTB_CLK;
-  wire [31:0]adder_0_BRAM_PORTB_DIN;
-  wire [31:0]adder_0_BRAM_PORTB_DOUT;
-  wire adder_0_BRAM_PORTB_EN;
-  wire adder_0_BRAM_PORTB_RST;
-  wire [3:0]adder_0_BRAM_PORTB_WE;
-  wire [1:0]adder_0_rspd_signal;
+  wire [31:0]adder_v2_0_BRAM_PORTB_ADDR;
+  wire adder_v2_0_BRAM_PORTB_CLK;
+  wire [31:0]adder_v2_0_BRAM_PORTB_DIN;
+  wire [31:0]adder_v2_0_BRAM_PORTB_DOUT;
+  wire adder_v2_0_BRAM_PORTB_EN;
+  wire adder_v2_0_BRAM_PORTB_RST;
+  wire [3:0]adder_v2_0_BRAM_PORTB_WE;
+  wire [1:0]adder_v2_0_rspd_signal;
   wire [12:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_0_BRAM_PORTA_CLK;
   wire [31:0]axi_bram_ctrl_0_BRAM_PORTA_DIN;
@@ -182,17 +182,17 @@ module design_1
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_100M_peripheral_aresetn;
 
-  design_1_adder_0_0 adder_0
-       (.BRAM_addr(adder_0_BRAM_PORTB_ADDR),
-        .BRAM_clk(adder_0_BRAM_PORTB_CLK),
-        .BRAM_din(adder_0_BRAM_PORTB_DIN),
-        .BRAM_dout(adder_0_BRAM_PORTB_DOUT),
-        .BRAM_en(adder_0_BRAM_PORTB_EN),
-        .BRAM_rst(adder_0_BRAM_PORTB_RST),
-        .BRAM_we(adder_0_BRAM_PORTB_WE),
+  design_1_adder_v2_0_0 adder_v2_0
+       (.BRAM_addr(adder_v2_0_BRAM_PORTB_ADDR),
+        .BRAM_clk(adder_v2_0_BRAM_PORTB_CLK),
+        .BRAM_din(adder_v2_0_BRAM_PORTB_DIN),
+        .BRAM_dout(adder_v2_0_BRAM_PORTB_DOUT),
+        .BRAM_en(adder_v2_0_BRAM_PORTB_EN),
+        .BRAM_rst(adder_v2_0_BRAM_PORTB_RST),
+        .BRAM_we(adder_v2_0_BRAM_PORTB_WE),
         .clk(processing_system7_0_FCLK_CLK0),
         .ctrl_signal(axi_gpio_0_gpio_io_o),
-        .rspd_signal(adder_0_rspd_signal),
+        .rspd_signal(adder_v2_0_rspd_signal),
         .rstn(rst_ps7_0_100M_peripheral_aresetn));
   (* BMM_INFO_ADDRESS_SPACE = "byte  0x40000000 32 > design_1 blk_mem_gen_0" *) 
   (* KEEP_HIERARCHY = "yes" *) 
@@ -238,7 +238,7 @@ module design_1
         .s_axi_wstrb(axi_smc_M00_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M00_AXI_WVALID));
   design_1_axi_gpio_0_0 axi_gpio_0
-       (.gpio2_io_i(adder_0_rspd_signal),
+       (.gpio2_io_i(adder_v2_0_rspd_signal),
         .gpio_io_o(axi_gpio_0_gpio_io_o),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M01_AXI_ARADDR),
@@ -350,19 +350,19 @@ module design_1
         .aresetn(rst_ps7_0_100M_peripheral_aresetn));
   design_1_blk_mem_gen_0_0 blk_mem_gen_0
        (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
-        .addrb(adder_0_BRAM_PORTB_ADDR),
+        .addrb(adder_v2_0_BRAM_PORTB_ADDR),
         .clka(axi_bram_ctrl_0_BRAM_PORTA_CLK),
-        .clkb(adder_0_BRAM_PORTB_CLK),
+        .clkb(adder_v2_0_BRAM_PORTB_CLK),
         .dina(axi_bram_ctrl_0_BRAM_PORTA_DIN),
-        .dinb(adder_0_BRAM_PORTB_DIN),
+        .dinb(adder_v2_0_BRAM_PORTB_DIN),
         .douta(axi_bram_ctrl_0_BRAM_PORTA_DOUT),
-        .doutb(adder_0_BRAM_PORTB_DOUT),
+        .doutb(adder_v2_0_BRAM_PORTB_DOUT),
         .ena(axi_bram_ctrl_0_BRAM_PORTA_EN),
-        .enb(adder_0_BRAM_PORTB_EN),
+        .enb(adder_v2_0_BRAM_PORTB_EN),
         .rsta(axi_bram_ctrl_0_BRAM_PORTA_RST),
-        .rstb(adder_0_BRAM_PORTB_RST),
+        .rstb(adder_v2_0_BRAM_PORTB_RST),
         .wea(axi_bram_ctrl_0_BRAM_PORTA_WE),
-        .web(adder_0_BRAM_PORTB_WE));
+        .web(adder_v2_0_BRAM_PORTB_WE));
   (* BMM_INFO_PROCESSOR = "arm > design_1 axi_bram_ctrl_0" *) 
   (* KEEP_HIERARCHY = "yes" *) 
   design_1_processing_system7_0_0 processing_system7_0

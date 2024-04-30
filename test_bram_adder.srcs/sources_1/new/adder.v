@@ -34,19 +34,10 @@ module adder
     assign rst = ~rstn;
    
     reg read_valid;
-    reg write_valid;  
-
-    wire read_valid;
-    wire write_valid;
+    reg write_valid;
    
     reg [31:0] addr;
     reg [3:0] counter;
-//    reg valid;
-    
-//    always @(posedge clk) begin
-//        if (read_valid || write_valid) valid <= 1;
-//        else valid <= 0;
-//    end
    
     always @(posedge clk) begin
         if (rst || ctrl_signal == 0) begin
